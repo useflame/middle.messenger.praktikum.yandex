@@ -1,0 +1,54 @@
+@import '../../styles/colors.css';
+
+.signup {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.signup__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-color-primary);
+}
+
+.signup__form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.signup__form__label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--text-color-primary);
+}
+
+.signup__form__input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup__form__button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-background-color);
+  color: var(--background-color);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: var(--button-background-hover);
+  }
+}

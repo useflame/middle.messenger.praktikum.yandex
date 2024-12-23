@@ -1,0 +1,30 @@
+@import '../../styles/colors.css';
+
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found__title {
+  font-size: 36px;
+  color: var(--text-color-primary);
+}
+
+.not-found__message {
+  font-size: 18px;
+  color: var(--text-color-secondary);
+}
+
+.not-found__link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--button-background-color);
+  color: var(--background-color);
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--button-background-hover);
+  }
+}

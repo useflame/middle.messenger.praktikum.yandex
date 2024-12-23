@@ -1,0 +1,32 @@
+@import '../../styles/colors.css';
+
+.server-error {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.server-error__title {
+  font-size: 36px;
+  color: var(--text-color-primary);
+}
+
+.server-error__message {
+  font-size: 18px;
+  color: var(--text-color-secondary);
+}
+
+.server-error__button,
+.server-error__link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--button-background-color);
+  color: var(--background-color);
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--button-background-hover);
+  }
+}

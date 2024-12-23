@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Settings</title>
+  <link rel="stylesheet" href="styles/settings.css">
+</head>
+<body>
+  <main class="settings" id="settings-form">
+    <h1 class="settings__title">User Settings</h1>
+    <section class="settings__avatar">
+      <h2 class="settings__subtitle">Change Avatar</h2>
+      <div class="settings__avatar__container">
+        <img src="/img/avatar.jpeg" alt="Current Avatar" class="settings__avatar__image">
+        <input type="file" id="avatar-upload" class="settings__avatar__input" name="avatar" accept="image/*">
+        <label for="avatar-upload" class="settings__avatar__button">Upload New Avatar</label>
+      </div>
+    </section>
+    <form class="settings__form">
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="first-name">First name</label>
+        <input class="settings__form__input" type="text" id="first-name" name="first_name" value="Roman">
+      </div>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="last-name">Last name</label>
+        <input class="settings__form__input" type="text" id="last-name" name="second_name" value="Kushnir">
+      </div>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="display-name">Display name</label>
+        <input class="settings__form__input" type="text" id="display-name" name="display_name" value="useflame">
+      </div>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="login">Login</label>
+        <input class="settings__form__input" type="text" id="login" name="login" value="@useflame">
+      </div>
+      <h2 class="settings__subtitle">Change Password</h2>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="old-password">Old password</label>
+        <input class="settings__form__input" type="password" id="old-password" name="oldPassword">
+      </div>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="new-password">New password</label>
+        <input class="settings__form__input" type="password" id="new-password" name="newPassword">
+      </div>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="repeat-new-password">Repeat new password</label>
+        <input class="settings__form__input" type="password" id="repeat-new-password" name="repeatNewPassword">
+      </div>
+      <button class="settings__form__button" type="submit">Change</button>
+    </form>
+  </main>
+</body>
+</html>
