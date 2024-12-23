@@ -1,0 +1,11 @@
+:root {
+  --background-color: #ffffff;
+  --text-color-primary: #333;
+  --text-color-secondary: #666;
+  --input-border-color: #ccc;
+  --button-background-color: #007bff;
+  --button-background-hover: #0056b3;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
