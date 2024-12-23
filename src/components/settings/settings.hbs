@@ -7,16 +7,28 @@
   <link rel="stylesheet" href="styles/settings.css">
 </head>
 <body>
-  <div class="settings">
+  <main class="settings">
     <h1 class="settings__title">User Settings</h1>
+    <section class="settings__avatar">
+      <h2 class="settings__subtitle">Change Avatar</h2>
+      <div class="settings__avatar__container">
+        <img src="" alt="Current Avatar" class="settings__avatar__image">
+        <input type="file" id="avatar-upload" class="settings__avatar__input" name="avatar" accept="image/*">
+        <label for="avatar-upload" class="settings__avatar__button">Upload New Avatar</label>
+      </div>
+    </section>
     <form class="settings__form">
       <div class="settings__form__field">
-        <label class="settings__form__label" for="first-name">First name</label>
+        <label class="settings__form__label" for="first_name">First name</label>
         <input class="settings__form__input" type="text" id="first-name" name="first_name" value="Roman">
       </div>
       <div class="settings__form__field">
-        <label class="settings__form__label" for="last-name">Last name</label>
-        <input class="settings__form__input" type="text" id="last-name" name="last_name" value="Kushnir">
+        <label class="settings__form__label" for="last_name">Last name</label>
+        <input class="settings__form__input" type="text" id="last-name" name="second_name" value="Kushnir">
+      </div>
+      <div class="settings__form__field">
+        <label class="settings__form__label" for="last_name">Display name</label>
+        <input class="settings__form__input" type="text" id="display-name" name="display_name" value="useflame">
       </div>
       <div class="settings__form__field">
         <label class="settings__form__label" for="login">Login</label>
@@ -37,6 +49,6 @@
       </div>
       <button class="settings__form__button" type="submit">Change</button>
     </form>
-  </div>
+  </main>
 </body>
 </html>
