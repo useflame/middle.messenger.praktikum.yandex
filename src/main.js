@@ -1,4 +1,4 @@
-import { renderLogin } from './components/login/login.js';
+import { renderLogin } from './components/login/login';
 import { renderSignup } from './components/signup/signup.js';
 import { renderUserSettings } from './components/settings/settings.js';
 import { renderNotFound } from './components/not-found/404.js';
