@@ -5,7 +5,7 @@ import { LoginHandler } from "./api/loginHandler";
 
 export function renderLogin(): void {
   const template = Handlebars.compile(loginTemplate);
-  const html: string = template();
+  const html: string = template({});
 
   const container: HTMLDivElement = document.createElement("div");
   container.innerHTML = html;

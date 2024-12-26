@@ -10,14 +10,14 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
-    open: true, // Automatically open the browser
+    open: true,
   },
   css: {
     postcss: 'postcss.config.js',
   },
   build: {
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html'), // Use an HTML file as the entry point
+      input: path.resolve(__dirname, 'index.html'),
     },
   },
 });

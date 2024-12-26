@@ -7,13 +7,19 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "lint": "eslint ."
   },
   "engines": {
     "node": ">=12"
   },
   "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/handlebars": "^4.0.40",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
     "vite": "^5.4.8",
     "vite-plugin-handlebars": "^2.0.0"
   },
