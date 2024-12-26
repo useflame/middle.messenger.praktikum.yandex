@@ -1,6 +1,10 @@
-import path from 'path';
-import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
+import { fileURLToPath } from 'url';
+import { defineConfig } from 'vite';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   plugins: [
