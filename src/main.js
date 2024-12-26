@@ -1,9 +1,9 @@
 import { renderLogin } from './components/login/login';
-import { renderSignup } from './components/signup/signup.js';
-import { renderUserSettings } from './components/settings/settings.js';
-import { renderNotFound } from './components/not-found/404.js';
-import { renderServerError } from './components/server-error/500.js';
-import { renderMessages } from './components/messages/messages.js';
+import { renderSignup } from './components/signup/signup';
+import { renderUserSettings } from './components/settings/settings';
+import { renderNotFound } from './components/not-found/404';
+import { renderServerError } from './components/server-error/500';
+import { renderMessages } from './components/messages/messages';
 
 document.addEventListener('DOMContentLoaded', () => {
   const path = window.location.pathname;
