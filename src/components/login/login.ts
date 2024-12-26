@@ -1,4 +1,3 @@
-// src/components/login/login.ts
 import Handlebars from "handlebars/dist/handlebars.min.js";
 import loginTemplate from "./login.hbs?raw";
 import "./login.css";
@@ -11,9 +10,9 @@ export function renderLogin(): void {
   const container: HTMLDivElement = document.createElement("div");
   container.innerHTML = html;
   document.body.appendChild(container);
-
-  // Select the form inside the container
+  
   const form: HTMLFormElement | null = container.querySelector(".login__form");
+
   if (form) {
     new LoginHandler(form);
   } else {
