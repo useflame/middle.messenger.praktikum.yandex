@@ -1,4 +1,19 @@
-<main>
-    <div>dummy page</div>
-    <input name="messages">
+<main class="chat-container">
+  <div class="chat-window">
+    <div class="message other">
+      <div class="text other">
+        Hello!
+        <div class="time">18:36</div>
+      </div>
+    </div>
+    <div class="message mine">
+      <div class="text mine">
+        hi
+        <div class="time">18:40</div>
+      </div>
+    </div>
+  </div>
+  <div class="input-bar">
+      {{> messageInput}}
+  </div>
 </main>
