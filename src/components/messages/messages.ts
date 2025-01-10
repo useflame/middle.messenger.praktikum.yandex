@@ -14,12 +14,12 @@ const setupMessageHandlers = (): HTMLElement => {
 
   messageInput.addEventListener('keypress', (event: KeyboardEvent) => {
     if (event.key === 'Enter') {
-      sendMessage();
+      console.log(sendMessage());
     }
   });
 
   sendButton.addEventListener('click', () => {
-    sendMessage();
+    console.log(sendMessage());
   });
   
   return sendButton;
@@ -28,7 +28,7 @@ const setupMessageHandlers = (): HTMLElement => {
 const sendMessage = (): string => {
   const messageInput = document.getElementById('message-input') as HTMLInputElement;
   const message = messageInput.value.trim();
-  
+  console.log({ message })
   if (message) {
     messageInput.value = '';
   }
